@@ -44,5 +44,31 @@ wc = sorted(b.items(), key = lambda (x,y): y, reverse=True)
 print(wc)
 
 
+#sort using the dict values 
+wc = sorted(b.items(), key = lambda (x,y): y, reverse=True)
+print(wc)
 
+print([i if i %2 ==0 else 99 for i in range(5) ])
+
+a = {i: i*i for i in range(5)}; print(a)
+c = {i*i for i in [-2,5, 3]}; print(c)
+
+
+r = [1,2,3,4,9]
+zeros = [0 for _ in r]; print(zeros)
+
+#generage pairs 
+o=[(x,y) 
+    for x in range(5) 
+    for y in range(2)]
+print(o)
+
+#generate pairs with x<y 
+o=[(x,y) 
+    for x in range(5) 
+    for y in range(x+1,5)]
+print(o)
+
+
+t=[x for x in range(4,6)]; print('t',t)
 
