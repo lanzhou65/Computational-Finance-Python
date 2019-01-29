@@ -38,3 +38,11 @@ for i in yy:
 
 print(y)
 
+
+#sort using the dict values 
+wc = sorted(b.items(), key = lambda (x,y): y, reverse=True)
+print(wc)
+
+
+
+
